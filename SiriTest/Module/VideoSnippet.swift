@@ -10,34 +10,25 @@ import AVFoundation
 import AVKit
 
 let audioUrl = URL(string: "https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3")!
+let imageURL = URL(string: "https://fastly.picsum.photos/id/137/200/300.jpg?hmac=5vAnK2h9wYgvt2769Z9D1XYb8ory9_zB0bqDgVjgAnk")!
 struct VideoSnippet: View {
     
     @State  var audioPlayer: AVAudioPlayer?
-    let avPlayer = AVPlayer(url: audioUrl)
+    let avPlayer = AVPlayer(url: url)
     var body: some View {
         VStack {
-           Text("name work")
-                .padding()
-         //   VideoPlayer(player: avPlayer).frame(height: 200).padding(.vertical)
+           // VideoPlayer(player: avPlayer).frame(height: 200).padding(.vertical)
+           
+            AsyncImage(url: imageURL) { image in
+                image.resizable().frame(height: 400)
+            } placeholder: {
+                Color.blue
+            }.frame(height: 400)
+
+            
         }.onAppear {
-            playSound()
-            print("play")
-            avPlayer.play()
+           // avPlayer.play()
         }
     }
     
-    func playSound() {
-        do {
-            try AVAudioSession.sharedInstance().setCategory(.playback)
-            try AVAudioSession.sharedInstance().setActive(false)
-            try AVAudioSession.sharedInstance().setActive(true)
-            
-//            audioPlayer = try AVAudioPlayer(contentsOf: audioUrl)
-//            audioPlayer?.prepareToPlay()
-//            audioPlayer?.play()
-            
-        } catch {
-            print("Error playing sound: \(error.localizedDescription)")
-        }
-    }
 }
