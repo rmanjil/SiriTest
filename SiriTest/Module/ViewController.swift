@@ -32,7 +32,7 @@ class ViewController: UIViewController {
     }
 
     @objc private func showAction(_ sender: UIButton) {
-        let controller = UIHostingController(rootView: VideoSnippet())//VideoPlayerController()
+        let controller = VideoPlayerController()
         navigationController?.pushViewController(controller, animated: true)
     }
 
