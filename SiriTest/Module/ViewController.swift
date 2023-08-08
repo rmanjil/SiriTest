@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 class ViewController: UIViewController {
 
@@ -31,7 +32,7 @@ class ViewController: UIViewController {
     }
 
     @objc private func showAction(_ sender: UIButton) {
-        let controller = VideoPlayerController()
+        let controller = UIHostingController(rootView: VideoSnippet())//VideoPlayerController()
         navigationController?.pushViewController(controller, animated: true)
     }
 

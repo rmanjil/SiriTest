@@ -8,8 +8,11 @@
 import UIKit
 import AVKit
 
+let url = URL(string: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4")!
+
+
 class VideoPlayerController: UIViewController {
-    let url = URL(string: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4")!
+  
     
     private lazy var playerView: UIView = {
         let view = UIView()

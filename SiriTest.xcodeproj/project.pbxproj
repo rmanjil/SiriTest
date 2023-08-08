@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A4A63D52A80D76500AFA571 /* VideoIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4A63D42A80D76500AFA571 /* VideoIntent.swift */; };
+		2A4A63D72A80E3FF00AFA571 /* VideoSnippet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4A63D62A80E3FF00AFA571 /* VideoSnippet.swift */; };
 		2ADD7D442A80ACCE00626AB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD7D432A80ACCE00626AB1 /* AppDelegate.swift */; };
 		2ADD7D462A80ACCE00626AB1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD7D452A80ACCE00626AB1 /* SceneDelegate.swift */; };
 		2ADD7D482A80ACCE00626AB1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD7D472A80ACCE00626AB1 /* ViewController.swift */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A4A63D42A80D76500AFA571 /* VideoIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoIntent.swift; sourceTree = "<group>"; };
+		2A4A63D62A80E3FF00AFA571 /* VideoSnippet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoSnippet.swift; sourceTree = "<group>"; };
 		2ADD7D402A80ACCE00626AB1 /* SiriTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SiriTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ADD7D432A80ACCE00626AB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2ADD7D452A80ACCE00626AB1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +80,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A4A63D32A80D6EB00AFA571 /* Siri */ = {
+			isa = PBXGroup;
+			children = (
+				2A4A63D42A80D76500AFA571 /* VideoIntent.swift */,
+			);
+			path = Siri;
+			sourceTree = "<group>";
+		};
 		2ADD7D372A80ACCD00626AB1 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +111,7 @@
 		2ADD7D422A80ACCE00626AB1 /* SiriTest */ = {
 			isa = PBXGroup;
 			children = (
+				2A4A63D32A80D6EB00AFA571 /* Siri */,
 				2ADD7D752A80B25A00626AB1 /* Module */,
 				2ADD7D742A80AD0C00626AB1 /* Resource */,
 				2ADD7D732A80ACEA00626AB1 /* Supporting */,
@@ -147,6 +160,7 @@
 			children = (
 				2ADD7D472A80ACCE00626AB1 /* ViewController.swift */,
 				2ADD7D762A80B27600626AB1 /* VideoPlayerController.swift */,
+				2A4A63D62A80E3FF00AFA571 /* VideoSnippet.swift */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -282,9 +296,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2ADD7D772A80B27600626AB1 /* VideoPlayerController.swift in Sources */,
+				2A4A63D52A80D76500AFA571 /* VideoIntent.swift in Sources */,
 				2ADD7D482A80ACCE00626AB1 /* ViewController.swift in Sources */,
 				2ADD7D442A80ACCE00626AB1 /* AppDelegate.swift in Sources */,
 				2ADD7D462A80ACCE00626AB1 /* SceneDelegate.swift in Sources */,
+				2A4A63D72A80E3FF00AFA571 /* VideoSnippet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
