@@ -12,18 +12,17 @@ import SwiftUI
 struct VideoIntent: AppIntent {
     static var title: LocalizedStringResource = "Say a phrase."
     
-//    static var openAppWhenRun: Bool {
-//        print("test working openAppWhenRun")
-//       return true
-//    }
+    static var openAppWhenRun: Bool {
+        print("test working openAppWhenRun")
+       return true
+    }
 //
     static var authenticationPolicy: IntentAuthenticationPolicy {
         .alwaysAllowed
     }
     
     func perform() async throws -> some IntentResult & ShowsSnippetView {
-      //  print("test working")
-        .result(value: true, view: VideoSnippet())
+        .result(value: true)//, view: VideoSnippet())
     }
 }
 
